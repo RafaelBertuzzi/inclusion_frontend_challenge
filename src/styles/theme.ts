@@ -5,6 +5,7 @@ export default {
     alert: '#F9C303',
     info: '#73F5FD',
     dark: '#000000',
+    gray_200: '#E5E5E5',
     gray: '#868686',
   },
 };
