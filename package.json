@@ -29,6 +29,7 @@
     "format": "prettier --write ./src",
     "prepare": "husky install"
   },
+  "cracoConfig": "craco.config.js",
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -61,6 +62,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "husky": "^8.0.0",
     "lint-staged": "^15.2.0",
-    "prettier": "^3.2.0"
+    "prettier": "^3.2.0",
+    "ts-jest": "^29.1.1"
   }
 }

@@ -21,7 +21,7 @@
 			"@/utils": ["./src/utils"],
 	  
 			"@/redux/*": ["./src/redux/*"],
-			"@/redux": ["./src/redux"],
+			"@/redux": ["./src/redux"]
 		  }
     }
 }
