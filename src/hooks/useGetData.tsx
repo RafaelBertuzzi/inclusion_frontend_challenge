@@ -36,4 +36,8 @@ export const useGetData = () => {
       );
     });
   }, [queries]);
+
+  return {
+    isInitialLoading: queries.every((query) => query.isInitialLoading),
+  };
 };
