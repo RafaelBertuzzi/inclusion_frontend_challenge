@@ -1,8 +1,8 @@
 import { useGetData } from '@/hooks/useGetData';
 import { Dashboard } from '@/screens/Dashboard';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Dashboard />,
