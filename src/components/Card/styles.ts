@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+interface IContainerProps {
+  isSuccess: boolean;
+}
+
+export const Container = styled.div<IContainerProps>`
   height: 50px;
   width: 800px;
   border-radius: 10px;
@@ -11,6 +15,13 @@ export const Container = styled.div`
   grid-gap: 24px;
   align-items: center;
   padding-left: 24px;
+
+  ${({ isSuccess, theme: { colors } }) =>
+    !isSuccess &&
+    `
+    border: 1px solid ${colors.danger};
+    border-left: 8px solid ${colors.danger};
+  `}
 
   @media (max-width: 840px) {
     grid-template-columns: 1fr;
@@ -34,6 +45,17 @@ export const Status = styled.div`
 `;
 
 export const Hostname = styled.div``;
+
+export const ErrorMessage = styled.div`
+  display: flex;
+  justify-content: center;
+
+  span {
+    font-weight: bold;
+    color: ${({ theme: { colors } }) => colors.danger};
+    text-transform: uppercase;
+  }
+`;
 
 export const Timestamp = styled.div`
   display: flex;
