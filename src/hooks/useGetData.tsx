@@ -20,7 +20,7 @@ export const useGetData = () => {
         queryKey: [endpoint],
         queryFn: () => fetchData(endpoint),
         retry: false,
-        refetchInterval: 15000,
+        refetchInterval: +process.env.REACT_APP_INTERVAL_MILLISECONDS || 15000,
       };
     }),
   });
