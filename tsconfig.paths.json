@@ -8,8 +8,8 @@
 			"@/components/*": ["./src/components/*"],
 			"@/components": ["./src/components"],
 	  
-			"@/features/*": ["./src/features/*"],
-			"@/features": ["./src/features"],
+			"@/hooks/*": ["./src/hooks/*"],
+			"@/hooks": ["./src/hooks"],
 	  
 			"@/routes/*": ["./src/routes/*"],
 			"@/routes": ["./src/routes"],
@@ -21,7 +21,10 @@
 			"@/utils": ["./src/utils"],
 	  
 			"@/redux/*": ["./src/redux/*"],
-			"@/redux": ["./src/redux"]
+			"@/redux": ["./src/redux"],
+			
+			"@/interfaces/*": ["./src/interfaces/*"],
+			"@/interfaces": ["./src/interfaces"]
 		  }
     }
 }
