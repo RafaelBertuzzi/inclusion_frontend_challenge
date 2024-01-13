@@ -3,6 +3,7 @@ import { endpoints } from '@/utils/endpoints';
 import { useQueries } from '@tanstack/react-query';
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
+import { INTERVAL_MILLISECONDS } from '../App';
 
 const fetchData = async (endpoint: string) => {
   const response = await fetch(
@@ -20,7 +21,7 @@ export const useGetData = () => {
         queryKey: [endpoint],
         queryFn: () => fetchData(endpoint),
         retry: false,
-        refetchInterval: +process.env.REACT_APP_INTERVAL_MILLISECONDS || 15000,
+        refetchInterval: INTERVAL_MILLISECONDS,
       };
     }),
   });

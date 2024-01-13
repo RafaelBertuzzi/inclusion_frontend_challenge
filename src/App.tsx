@@ -7,6 +7,8 @@ import theme from './styles/theme';
 
 const queryClient = new QueryClient();
 
+export const INTERVAL_MILLISECONDS = 15000; // 15 seconds
+
 function App() {
   return (
     <Provider store={store}>
