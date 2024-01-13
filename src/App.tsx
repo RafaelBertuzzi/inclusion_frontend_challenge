@@ -1,9 +1,9 @@
 import { store } from '@/redux/store';
+import { Routes } from '@/routes';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { Provider } from 'react-redux';
 import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
-import { Dashboard } from '@/screens/Dashboard';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 
 const queryClient = new QueryClient();
 
@@ -12,7 +12,7 @@ function App() {
     <Provider store={store}>
       <ThemeProvider theme={theme}>
         <QueryClientProvider client={queryClient}>
-          <Dashboard />
+          <Routes />
         </QueryClientProvider>
       </ThemeProvider>
     </Provider>
