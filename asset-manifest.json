@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/inclusion_frontend_challenge/static/css/main.bd8cbf95.css",
-    "main.js": "/inclusion_frontend_challenge/static/js/main.73797cc3.js",
+    "main.js": "/inclusion_frontend_challenge/static/js/main.7e279873.js",
     "static/media/green_checkmark.png": "/inclusion_frontend_challenge/static/media/green_checkmark.de9b3a65ac5651a3bb05.png",
     "index.html": "/inclusion_frontend_challenge/index.html",
     "main.bd8cbf95.css.map": "/inclusion_frontend_challenge/static/css/main.bd8cbf95.css.map",
-    "main.73797cc3.js.map": "/inclusion_frontend_challenge/static/js/main.73797cc3.js.map"
+    "main.7e279873.js.map": "/inclusion_frontend_challenge/static/js/main.7e279873.js.map"
   },
   "entrypoints": [
     "static/css/main.bd8cbf95.css",
-    "static/js/main.73797cc3.js"
+    "static/js/main.7e279873.js"
   ]
 }
