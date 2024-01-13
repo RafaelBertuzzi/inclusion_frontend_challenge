@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: 32px;
 `;
 
 export const Header = styled.div`
@@ -12,4 +13,10 @@ export const Header = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 20px 30px;
+`;
+
+export const CardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 `;
